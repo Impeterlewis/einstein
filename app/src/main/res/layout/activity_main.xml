@@ -1,13 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <Button
-
-        android:id="@+id/btn1"
+    <LinearLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/educative_videos" />
+        android:layout_height="0dp"
+        android:orientation="vertical">
 
-</FrameLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:contentDescription="@string/TODO"
+            android:text="@string/knowledge_vids"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:contentDescription="@string/TODO"
+            android:text="@string/papers_and_research"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:contentDescription="@string/TODO"
+            android:text="@string/online_courses"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:contentDescription="@string/TODO"
+            android:text="@string/random_fact"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

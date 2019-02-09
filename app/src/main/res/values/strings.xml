@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">einstein</string>
     <string name="play">Play</string>
-    <string name="educative_videos">Educative videos</string>
+    <string name="TODO">TODO</string>
+    <string name="close">x</string>
+    <string name="knowledge_vids">Knowledge Vids</string>
+    <string name="papers_and_research">Papers and Research</string>
+    <string name="online_courses">Online Courses</string>
+    <string name="random_fact">Random Fact</string>
 </resources>
