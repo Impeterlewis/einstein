@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -55,7 +56,8 @@ public class YoutubeEinsteinPlayer extends YouTubeBaseActivity {
         mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlay);
         mYoutubePlayerView.initialize(getApiKey(), mOnInitializedListener);
 
-        public static YouTubePlayer.PlayerStyle valueOf (MINIMAL);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
        /* btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
