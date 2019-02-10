@@ -7,10 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
+    ImageButton btn1, btn2, btn3, btn4;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -20,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        button = (Button) findViewById(R.id.btn1);
-        button.setOnClickListener(new View.OnClickListener() {
+        btn1 = findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, YoutubeEinsteinPlayer.class);
